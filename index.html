@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <title>Typing Speed Test</title>
+</head>
+<body>
+  <header class="py-5 border-bottom">
+    <div class="container">
+      <h1 class="mb-0 display-4 text-center">Typing Speed Test</h1>
+    </div>
+  </header>
+  <main class="pt-3 pb-5">
+    <section class="intro mb-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="card bg-light">
+              <div class="card-header">
+                <i class="fas fa-info-circle"></i>
+              </div>
+              <div class="card-body">
+                <p class="card-text text-center">This is a typing speed test. Your goal is to duplicate the provided sentence in the field below. The timer starts when you start typing, and only stops when you match the sentence exactly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="test-area">
+      <div class="container">
+        <div class="row justify-content-center mb-3">
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-between align-items-center p-4 mb-3 alert alert-secondary" id="ORIGIN_PARENT" style="transition: all .25s;">
+              <p class="mb-0 lead" id="originText"></p>
+              <button type="button" class="btn btn-light" id="NEW_SENTENCE" data-toggle="tooltip" data-placement="left" title="New sentence"><i class="fas fa-sync"></i></button>
+            </div>
+            <textarea class="form-control" id="INPUT_TEXT" rows="4" placeholder="The clock starts when you start typing"></textarea>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
+            <span class="mb-3 mb-sm-0 display-4 text-center text-sm-left" id="TIMER">00:00:00</span>
+            <button type="button" class="btn btn-lg btn-primary" id="RESET_TIMER">Reset</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>

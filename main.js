@@ -17,7 +17,7 @@ const TIMER = document.querySelector('#TIMER');
 const RESET_TIMER = document.querySelector('#RESET_TIMER');
 
 let originTextElement = document.querySelector('#originText');
-let pangramIndex = [0];
+let pangramIndex = 0;
 // Initalize the origin text with the first pangram in the pangram array
 originTextElement.innerHTML = PANGRAM_ARRAY[pangramIndex];
 let originText = document.querySelector('#originText').innerHTML;

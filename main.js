@@ -34,7 +34,7 @@ RESET_TIMER.addEventListener('click', resetTimer);
 // Switch the current pangram to use for the test
 function switchPangram() {
   if (pangramIndex < PANGRAM_ARRAY.length - 1) {
-    pangramIndex++
+    pangramIndex++;
   } else {
     pangramIndex = 0;
   }

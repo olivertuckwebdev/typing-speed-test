@@ -23,7 +23,7 @@ originTextElement.innerHTML = PANGRAM_ARRAY[pangramIndex];
 let originText = document.querySelector('#originText').innerHTML;
 let interval;
 let timer = [0, 0, 0, 0];
-timerRunning = false;
+let timerRunning = false;
 
 NEW_SENTENCE.addEventListener('click', switchPangram);
 NEW_SENTENCE.addEventListener('click', resetTimer);

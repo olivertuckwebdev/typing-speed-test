@@ -95,6 +95,6 @@ function resetTimer() {
 }
 
 // Enable Bootstrap tooltips
-$(function () {
+$(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });

@@ -25,12 +25,6 @@ let interval;
 let timer = [0, 0, 0, 0];
 let timerRunning = false;
 
-NEW_SENTENCE.addEventListener('click', switchPangram);
-NEW_SENTENCE.addEventListener('click', resetTimer);
-INPUT_TEXT.addEventListener('keypress', startTimer);
-INPUT_TEXT.addEventListener('keyup', spellCheck);
-RESET_TIMER.addEventListener('click', resetTimer);
-
 // Switch the current pangram to use for the test
 function switchPangram() {
   if (pangramIndex < PANGRAM_ARRAY.length - 1) {
@@ -93,6 +87,12 @@ function resetTimer() {
   TIMER.innerHTML = '00:00:00';
   ORIGIN_PARENT.className = 'd-flex justify-content-between align-items-center p-4 mb-3 alert alert-secondary';
 }
+
+NEW_SENTENCE.addEventListener('click', switchPangram);
+NEW_SENTENCE.addEventListener('click', resetTimer);
+INPUT_TEXT.addEventListener('keypress', startTimer);
+INPUT_TEXT.addEventListener('keyup', spellCheck);
+RESET_TIMER.addEventListener('click', resetTimer);
 
 // Enable Bootstrap tooltips
 $(document).ready(function () {
